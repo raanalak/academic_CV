@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins adjusted for an exact 2-page fit
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{0.9in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1.1in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=1pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+\noindent
+\begin{minipage}{0.13\textwidth}
+    \IfFileExists{profile_photo.jpg}{\includegraphics[width=\linewidth]{profile_photo.jpg}}{\vspace{1.3cm}}
+\end{minipage}%
+\hfill
+\begin{minipage}{0.85\textwidth}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\Large Raana RafieiLak} & Email: \href{mailto:raanarafieilak@gmail.com}{\nolinkurl{raanarafieilak@gmail.com}}\\
+      LinkedIn: \href{https://www.linkedin.com/in/raana-rafieilak-a96b34249/}{\nolinkurl{linkedin.com/in/raana-rafieilak/}} & Mobile: +989021898720 \\
+      GitHub: \href{https://github.com/raanalak}{\nolinkurl{github.com/raanalak}} & Tehran, Iran \\
+    \end{tabular*}
+\end{minipage}
+
+\vspace{2pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shahid Beheshti University}{Tehran, Iran}
+      {BSc. Cellular and Molecular Biology; GPA: 17.3/20}{Sept 2021 -- 2026}
+    \resumeSubheading
+      {Shahid Beheshti University}{Tehran, Iran}
+      {Minor in Computer Engineering}{Sept 2022 -- 2026}
+      \vspace{-5pt}
+      \item[]\small{\textit{Relevant Coursework: Data Structures and Algorithms, Database Systems, Software Engineering, Artificial Intelligence}}
+  \resumeSubHeadingListEnd
+
+%-----------LANGUAGE & INTERESTS-----------------
+\section{Language Skills \& Research Interests}
+ \resumeSubHeadingListStart
+    \item\small{\textbf{Languages: } English (Fluent, TOEFL iBT: 102 -- R: 29, L: 29, S: 23, W: 21) \quad$|$\quad Persian \& Azerbaijani (Native)}
+    \item\small{\textbf{Research Interests: } Single-Cell \& Bulk Transcriptomics, Functional Genomics, Structural Biology, Computational Drug Discovery, ML in Biology}
+ \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Peer-Reviewed Publications}
+  \resumeSubHeadingListStart
+    \item\small{
+      \textbf{A novel approach to small molecule loading, release, and delivery using cylindrical and planar cellulose nanofiber arrangements} (2025). \textit{Cellulose} (Q1, Springer Nature; Impact Factor: 4.8). {Hamedi, A., Azimzadeh Irani, M., Esmaeilzadeh, A., Rafiei Lak, R., Farrokhi, N., \& Jahanfar, M.} \href{https://doi.org/10.1007/s10570-025-06705-6}{https://doi.org/10.1007/s10570-025-06705-6}
+      \vspace{2pt}
+      
+      \begin{itemize}[leftmargin=0.15in]
+        \item[-] Investigated curcumin attachment, distribution, and stability on cellulose nanofiber configurations using molecular docking and molecular dynamics simulations
+        \item[-] Demonstrated that cylindrical configurations provide faster curcumin delivery while planar configurations offer more stable and extended administration
+        \item[-] Validated computational findings through experimental approaches including SEM, FTIR spectroscopy, and UV spectra analysis
+        \item[-] Established cellulose nanofibers as a promising platform for targeted drug loading, release, and delivery systems
+      \end{itemize}
+    }
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shahid Beheshti University}{Tehran, Iran}
+      {Undergraduate Researcher -- Cell \& Molecular Biology Dept.}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Drug Delivery Research}
+          {Modeled cellulose nanofiber configurations for curcumin loading/release; analyzed docking and MD trajectories and generated all 3D visualizations via PyMOL.}
+        \resumeItem{Manuscript Preparation}
+          {Authored the final manuscript and produced publication-quality figures published in \textit{Cellulose} (Springer Nature).}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TRANSCRIPTOMICS PROJECTS-----------------
+\section{Bioinformatics \& Transcriptomics Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Single-Cell RNA-Seq Analysis of PBMC 3K}{Winter 2024}
+      {End-to-End scRNA-Seq Workflow \& Cell Typing}{\href{https://github.com/raanalak/scrnaseq-pbmc3k-seurat}{github.com/raanalak/scrnaseq-pbmc3k-seurat}}
+      \resumeItemListStart
+        \resumeItem{Workflow}
+          {Executed complete pipeline on 2,700 10x Genomics PBMCs using Seurat v5 in R, including QC filtering, log-normalization, vst feature selection, and PCA.}
+        \resumeItem{Clustering \& Cell Typing}
+          {Resolved immune subpopulations via Louvain clustering and UMAP/t-SNE; identified canonical biomarkers to annotate T cells, B cells, Monocytes, and NK cells.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Bulk RNA-Seq Differential Expression (GSE63310)}{Fall 2024}
+      {Linear Modeling, Voom Transformation \& Pathways}{\href{https://github.com/raanalak/rnaseq-gse63310-analysis}{github.com/raanalak/rnaseq-gse63310-analysis}}
+      \resumeItemListStart
+        \resumeItem{Statistical Modeling}
+          {Constructed edgeR/limma pipeline on mouse mammary lineage dataset; normalized counts with TMM and modeled mean-variance dependency via precision-weighted \textit{voom}.}
+        \resumeItem{Signatures \& Enrichment}
+          {Pinpointed lineage-specific DEGs with empirical Bayes moderation; generated volcano plots, MDS plots, and heatmaps with downstream GO/pathway enrichment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SOFTWARE PROJECTS-----------------
+\section{Programming \& Engineering Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Unsupervised Anomaly Detection from Web Server Logs}{Fall 2024}
+      {Machine Learning \& NLP Project}{Python}
+      \resumeItemListStart
+        \resumeItem{Detection Framework}
+          {Engineered text-based features from raw HTTP server logs and built unsupervised ML models to detect anomalous system/user patterns without ground-truth labels.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Hospital Management System}{Spring 2025}
+      {Full-Stack \& Containerized Application}{Team of 4}
+      \resumeItemListStart
+        \resumeItem{Development \& Deployment}
+          {Designed Figma workflows, developed React.js frontend interfaces connected to RESTful APIs, and deployed via Docker Compose. \href{https://github.com/raziberezayat/SE-Project}{[GitHub]}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {To-Do List Android App}{Spring 2023}
+      {Mobile Application Course}{Team of 2}
+      \resumeItemListStart
+        \resumeItem{Implementation}
+          {Built task management Android application using Java, Android Studio, and socket programming for real-time synchronization. \href{https://github.com/raanalak/ToDo-App}{[GitHub]}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item\small{
+     \textbf{Computational Biology: } Single-Cell RNA-Seq (Seurat), Bulk RNA-Seq (edgeR, limma-voom), Differential Expression, Gene Enrichment, PyMOL, Molecular Docking \& Dynamics
+    }
+    \item\small{
+     \textbf{Programming \& Tools: } R (Bioconductor, tidyverse), Python (NumPy, Pandas, Scikit-learn, BioPython), Java, C, Git/GitHub, Docker, Linux
+    }
+    \item\small{
+     \textbf{Laboratory Skills: } DNA/RNA Isolation, PCR, Gel Electrophoresis, Spectrophotometry, Cell Culture, Microscopy
+    }
+ \resumeSubHeadingListEnd
+
+%-----------REFERENCES-----------------
+\section{References}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Maryam Azimzadeh Irani}{Assistant Professor of Bioinformatics}
+      {Faculty of Life Sciences and Biotechnology, Shahid Beheshti University}{E-mail: m\_azimzadeh@sbu.ac.ir}
+    \resumeSubheading
+      {Naser Farrokhi}{Associate Professor of Cell \& Molecular Biology}
+      {Faculty of Life Sciences and Biotechnology, Shahid Beheshti University}{E-mail: n\_farrokhi@sbu.ac.ir}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
